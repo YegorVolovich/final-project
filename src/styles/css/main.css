@@ -20,6 +20,7 @@ h1,
 h2,
 h3,
 h4,
+h6,
 p,
 ul[class],
 ol[class],
@@ -635,4 +636,30 @@ p {
 .about-us-content__text-subtitle {
   margin-top: 40px;
   margin-bottom: 48px;
+}
+.facts {
+  padding-top: 78px;
+}
+.facts__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.facts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.facts__item-subtitle {
+  color: #E0E5F3;
+  padding-top: 8px;
 }
