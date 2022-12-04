@@ -1,0 +1,26 @@
+.main-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 16px 24px;
+    gap: 8px;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    cursor: pointer;
+    &::after {
+		content: "↗";
+		width: 20px;
+		height: 20px;
+	} 
+    &:hover {
+		background-color: $yellow;
+        border: none;
+        color: $blue;
+	}
+}

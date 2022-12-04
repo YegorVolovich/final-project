@@ -1,0 +1,12 @@
+.wrapper {
+	background-color: #172048;
+	position: relative;
+
+      &__background {
+            background-image: url(/src/assets/images/background.svg);
+            background-size: 100vw;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: top;
+      }
+}
