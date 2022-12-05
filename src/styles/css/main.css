@@ -19,6 +19,7 @@ body,
 h1,
 h2,
 h3,
+h4,
 h6,
 p,
 ul[class],
@@ -550,7 +551,7 @@ p {
           align-items: center;
   border-radius: 30px;
   padding: 16px 24px;
-  gap: 8px;
+  gap: 10px;
   font-family: "Inter";
   font-size: 18px;
   font-weight: 500;
@@ -692,6 +693,14 @@ p {
 .solution__item {
   margin: 40px 0;
 }
+.solution__item-title::before {
+  content: url(/src/assets/icons/check-mark.svg);
+}
+.solution__item-subtitle {
+  margin-top: 18px;
+  padding-left: 34px;
+}
+
 .solution-container {
   display: -webkit-box;
   display: -ms-flexbox;

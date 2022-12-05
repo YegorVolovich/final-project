@@ -53,10 +53,15 @@
 
     &__item-title {
     }
+    &__item-title::before {
+        content: url(/src/assets/icons/check-mark.svg);
+    }
 
     // .solution__item-subtitle
 
     &__item-subtitle {
+        margin-top: 18px;
+        padding-left: 34px;
     }
 }
 
