@@ -1,6 +1,7 @@
 .wrapper {
-	background-color: #172048;
+	background-color: #0b142f;
 	position: relative;
+      overflow: hidden;
 
       &__background {
             background-image: url(/src/assets/images/background.svg);

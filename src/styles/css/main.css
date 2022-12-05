@@ -465,8 +465,9 @@ p {
 }
 
 .wrapper {
-  background-color: #172048;
+  background-color: #0b142f;
   position: relative;
+  overflow: hidden;
 }
 .wrapper__background {
   background-image: url(/src/assets/images/background.svg);
@@ -662,4 +663,28 @@ p {
 .facts__item-subtitle {
   color: #E0E5F3;
   padding-top: 8px;
+}
+
+.solution {
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #FFC93E), color-stop(40%, #353F5B));
+  background: linear-gradient(to right, #FFC93E 40%, #353F5B 40%);
+}
+.solution__photo-circle {
+  position: absolute;
+  top: -4rem;
+  left: 30rem;
+  z-index: 0;
+}
+.solution__content {
+  max-width: 45%;
+  padding-left: 3.75rem;
+}
+.solution__item {
+  margin: 40px 0;
+}
+.solution-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6.25rem 0;
 }
