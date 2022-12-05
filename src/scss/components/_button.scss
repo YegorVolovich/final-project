@@ -1,26 +1,49 @@
 .main-button {
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    padding: 16px 24px;
-    gap: 10px;
-    font-family: 'Inter';
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    cursor: pointer;
-    &::after {
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	border-radius: 30px;
+	padding: 16px 24px;
+	gap: 10px;
+	font-family: "Inter";
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	cursor: pointer;
+	&::after {
 		content: "↗";
 		width: 20px;
 		height: 20px;
-	} 
-    &:hover {
+	}
+	&:hover {
 		background-color: $yellow;
-        border: none;
-        color: $blue;
+		border: none;
+		color: $blue;
+	}
+}
+
+.button-yellow {
+	background-color: $yellow;
+	color: #0a142f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+	padding: 20px 30px;
+	font-family: "Inter";
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	letter-spacing: 0em;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+
+	&:hover {
+		background-color: transparent;
+		border: 1px solid #fff;
+		color: #fff;
 	}
 }

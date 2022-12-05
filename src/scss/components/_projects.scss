@@ -1,0 +1,67 @@
+.projects {
+	// .projects__button
+
+	&__button {
+        margin: 0 auto;
+	}
+}
+.projects-top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 7.5rem 0 3rem;
+
+	// .projects-top__title
+
+	&__title {
+		margin-bottom: 1.5rem;
+	}
+
+	// .projects-top__navigation
+
+	&__navigation {
+		display: flex;
+		justify-content: space-between;
+		width: 45%;
+	}
+
+	// .projects-top__navigation-link
+
+	&__navigation-link {
+		font-family: "Inter";
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 30px;
+		text-align: center;
+		color: #fff;
+		cursor: pointer;
+	}
+}
+.work {
+	display: flex;
+	gap: 32px;
+    margin-bottom: 48px;
+
+	// .work__card
+
+	&__card {
+	}
+
+	// .work__card-image
+
+	&__card-image {
+		width: 100%;
+	}
+
+	// .work__card-title
+
+	&__card-title {
+		margin: 2rem 0;
+		max-width: 24.563rem;
+	}
+
+	// .work__card-subtitle
+
+	&__card-subtitle {
+	}
+}

@@ -543,9 +543,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -567,6 +564,35 @@ p {
   background-color: #FFC93E;
   border: none;
   color: #172048;
+}
+
+.button-yellow {
+  background-color: #FFC93E;
+  color: #0a142f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  padding: 20px 30px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.button-yellow:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 .banner-content {
@@ -769,4 +795,58 @@ p {
   background-color: #353F5B;
   border-radius: 0px 0px 50px 0px;
   padding: 5.188rem 2.375rem;
+}
+
+.projects__button {
+  margin: 0 auto;
+}
+
+.projects-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 7.5rem 0 3rem;
+}
+.projects-top__title {
+  margin-bottom: 1.5rem;
+}
+.projects-top__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 45%;
+}
+.projects-top__navigation-link {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+.work__card-image {
+  width: 100%;
+}
+.work__card-title {
+  margin: 2rem 0;
+  max-width: 24.563rem;
 }
