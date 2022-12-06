@@ -20,6 +20,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 h6,
 p,
 ul[class],
@@ -443,9 +444,10 @@ h5 {
 
 h6 {
   font-family: "Inter";
-  font-size: 20px;
-  font-weight: 400;
-  text-align: left;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 p {
@@ -849,4 +851,54 @@ p {
 .work__card-title {
   margin: 2rem 0;
   max-width: 24.563rem;
+}
+.reviews__title {
+  margin: 5.625rem 0 3rem 0;
+}
+
+.reviews-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.reviews-slide {
+  background-color: #353F5B;
+  max-width: 750px;
+  border-radius: 45px;
+  padding: 20px;
+}
+.reviews-slide__quote {
+  opacity: 0.1;
+}
+.reviews-slide__text {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.reviews-slide__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.reviews-slide__footer-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.reviews-slide__footer-user-info-position {
+  color: #FFC93E;
 }
