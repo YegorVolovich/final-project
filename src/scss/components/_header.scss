@@ -1,0 +1,53 @@
+.header {
+	&__content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 35px;
+	}
+
+	&__content-logo {
+	}
+
+	&__content-nav {
+		display: flex;
+		justify-content: space-between;
+		min-width: 55%;
+	}
+
+	&__content-nav-link {
+		font-family: "Inter";
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 22px;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	&__content-menu {
+		width: 16px;
+		height: 2px;
+		background-color: #f8f8f8;
+		position: relative;
+		cursor: pointer;
+	}
+	&__content-menu::before {
+		content: "";
+		width: 16.5px;
+		height: 2px;
+		background-color: #f8f8f8;
+		top: 6px;
+		position: absolute;
+	}
+	&__content-menu::after {
+		content: "";
+		width: 16.5px;
+		height: 2px;
+		background-color: #f8f8f8;
+		bottom: 6px;
+		position: absolute;
+	}
+}

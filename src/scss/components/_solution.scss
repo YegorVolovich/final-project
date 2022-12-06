@@ -1,0 +1,72 @@
+.solution {
+    background: linear-gradient(to right, $yellow 40%, $bgBlue 40%);
+
+    // .solution__photo
+
+    &__photo {
+        position: relative;
+    }
+
+    // .solution__photo-img
+
+    &__photo-img {
+        position: relative;
+        z-index: 1;
+
+    }
+
+    // .solution__photo-circle
+
+    &__photo-circle {
+        position: absolute;
+        top: -4rem;
+        left: 32rem;
+        z-index: 0;
+    }
+
+    // .solution__content
+
+    &__content {
+        max-width: 45%;
+        padding-left: 3.75rem;
+    }
+
+    // .solution__title
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+
+    // .solution__list
+
+    &__list {
+    }
+
+    // .solution__item
+
+    &__item {
+        margin: 40px 0;
+    }
+
+    // .solution__item-title
+
+    &__item-title {
+    }
+    &__item-title::before {
+        content: url(/src/assets/icons/check-mark.svg);
+    }
+
+    // .solution__item-subtitle
+
+    &__item-subtitle {
+        margin-top: 18px;
+        padding-left: 34px;
+    }
+}
+
+.solution-container {
+   display: flex;
+   justify-content: center;
+   padding: 6.25rem 0 5.25rem 0;
+}
