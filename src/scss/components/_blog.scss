@@ -36,11 +36,11 @@
 		text-align: center;
 		border-radius: 10px;
 		margin: 1.5rem 0 1rem 0;
-        cursor: pointer;
+		cursor: pointer;
 	}
-    &__cards-column-label:hover {
-        color: $yellow;
-    }
+	&__cards-column-label:hover {
+		color: $yellow;
+	}
 
 	// .blog__cards-column-date
 
@@ -50,7 +50,7 @@
 	// .blog__cards-column-description
 
 	&__cards-column-description {
-        margin: 1.5rem 0 1.5rem 0;
+		margin: 1.5rem 0 1.5rem 0;
 	}
 
 	// .blog__cards-button
