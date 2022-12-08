@@ -1035,6 +1035,21 @@ p {
   line-height: 16px;
   text-align: left;
 }
+.main-footer__top-form-email::-webkit-input-placeholder {
+  color: black;
+}
+.main-footer__top-form-email::-moz-placeholder {
+  color: black;
+}
+.main-footer__top-form-email:-ms-input-placeholder {
+  color: black;
+}
+.main-footer__top-form-email::-ms-input-placeholder {
+  color: black;
+}
+.main-footer__top-form-email::placeholder {
+  color: black;
+}
 .main-footer__top-form-button {
   position: relative;
   border: none;
@@ -1044,6 +1059,7 @@ p {
 .main-footer__top-form-button::after {
   content: url(/src/assets/icons/arrow-right.svg);
   position: absolute;
+  right: 0;
 }
 .main-footer__top-info {
   width: 22%;
@@ -1098,5 +1114,5 @@ p {
 .form__ornament {
   position: absolute;
   top: 1.25rem;
-  left: 1.25rem;
+  left: -1.75rem;
 }

@@ -48,6 +48,9 @@
 		line-height: 16px;
 		text-align: left;
 	}
+	&__top-form-email::placeholder {
+		color: black;
+	}
 
 	&__top-form-button {
 		position: relative;
@@ -58,6 +61,7 @@
 	&__top-form-button::after {
 		content: url(/src/assets/icons/arrow-right.svg);
 		position: absolute;
+		right: 0;
 	}
 
 	// .main-footer__top-info
@@ -142,7 +146,7 @@
 	&__ornament {
 		position: absolute;
 		top: 1.25rem;
-		left: 1.25rem;
+		left: -1.75rem;
 	}
 
 	// .form__ornament-img
