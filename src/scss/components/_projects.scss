@@ -2,7 +2,8 @@
 	// .projects__button
 
 	&__button {
-        margin: 0 auto;
+		margin: 0 auto;
+		border: 1px solid $yellow;
 	}
 }
 .projects-top {
@@ -34,13 +35,18 @@
 		line-height: 30px;
 		text-align: center;
 		color: #fff;
+		transition: 0.3s;
 		cursor: pointer;
+	}
+
+	&__navigation-link:hover {
+		color: $yellow;
 	}
 }
 .work {
 	display: flex;
 	gap: 32px;
-    margin-bottom: 48px;
+	margin-bottom: 48px;
 
 	// .work__card
 
