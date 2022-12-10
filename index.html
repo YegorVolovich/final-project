@@ -19,11 +19,11 @@
 								alt="logo-dalio"
 							/>
 							<div class="header__content-nav">
-								<a class="header__content-nav-link" href="">About us</a>
-								<a class="header__content-nav-link" href="">What We do</a>
-								<a class="header__content-nav-link" href="">Our work</a>
-								<a class="header__content-nav-link" href="">Blog</a>
-								<a class="header__content-nav-link" href="">Say hi</a>
+								<a class="header__content-nav-link" href="#about-us">About us</a>
+								<a class="header__content-nav-link" href="#what-we-do">What We do</a>
+								<a class="header__content-nav-link" href="#our-work">Our work</a>
+								<a class="header__content-nav-link" href="#blog">Blog</a>
+								<a class="header__content-nav-link" href="#say-hi">Say hi</a>
 							</div>
 							<span class="header__content-menu"> </span>
 						</div>
@@ -52,7 +52,10 @@
 								src="/src/assets/icons/circle.svg"
 								alt="decor-circle"
 							/> -->
-							<h1 class="banner-content__title">Digital</h1>
+							<h1 class="banner-content__title">
+								Digital
+								<a class="banner-content__scroll-down" href="#about-us">Scroll Down</a>
+							</h1>
 							<h1 class="banner-content__title2">Agency</h1>
 							<p class="banner-content__subtitle">
 								Full-service design support that growing B2B companies need.
@@ -65,7 +68,7 @@
 					</div>
 				</section>
 
-				<section class="about-us">
+				<section class="about-us" id="about-us">
 					<div class="container">
 						<div class="about-us-content">
 							<div class="about-us-content__text">
@@ -86,7 +89,10 @@
 									This unique set of capabilities sets us apart from other
 									agencies and positions DIG to help you attack your goals.
 								</p>
-								<button class="main-button about-us-content__button" type="button">
+								<button
+									class="main-button about-us-content__button"
+									type="button"
+								>
 									Our Projects
 								</button>
 							</div>
@@ -173,11 +179,13 @@
 					</div>
 				</section>
 
-				<section class="services">
+				<section class="services" id="what-we-do">
 					<div class="container">
 						<div class="services-top">
 							<h2 class="services-top__title">Service we can help you</h2>
-							<button class="main-button services-top__button" type="button">See all</button>
+							<button class="main-button services-top__button" type="button">
+								See all
+							</button>
 						</div>
 						<div class="services-items">
 							<div class="services-items__left">
@@ -194,7 +202,10 @@
 										nullam bibendum luctus viverra. Eu pellentesque sem sed
 										platea diam dignissim duis purus.
 									</p>
-									<button class="main-button services-items__button" type="button">
+									<button
+										class="main-button services-items__button"
+										type="button"
+									>
 										Read More
 									</button>
 								</div>
@@ -211,7 +222,10 @@
 										Nulla ridiculus nullam bibendum luctus viverra. Eu
 										pellentesque sem sed platea diam dignissim duis purus.
 									</p>
-									<button class="main-button services-items__button" type="button">
+									<button
+										class="main-button services-items__button"
+										type="button"
+									>
 										Read More
 									</button>
 								</div>
@@ -230,7 +244,10 @@
 										nullam bibendum luctus viverra. Eu pellentesque sem sed
 										platea diam dignissim duis purus.
 									</p>
-									<button class="main-button services-items__button" type="button">
+									<button
+										class="main-button services-items__button"
+										type="button"
+									>
 										Read More
 									</button>
 								</div>
@@ -247,7 +264,10 @@
 										nullam bibendum luctus viverra. Eu pellentesque sem sed
 										platea diam dignissim duis purus.
 									</p>
-									<button class="main-button services-items__button" type="button">
+									<button
+										class="main-button services-items__button"
+										type="button"
+									>
 										Read More
 									</button>
 								</div>
@@ -256,7 +276,7 @@
 					</div>
 				</section>
 
-				<section class="projects">
+				<section class="projects" id="our-work">
 					<div class="container">
 						<div class="projects-top">
 							<h2 class="projects-top__title">Our latest Projects</h2>
@@ -300,13 +320,16 @@
 								</p>
 							</div>
 						</div>
-						<button class="main-button button-yellow projects__button" type="button">
+						<button
+							class="main-button button-yellow projects__button"
+							type="button"
+						>
 							Load More
 						</button>
 					</div>
 				</section>
 
-				<section class="reviews">
+				<section class="reviews" id="say-hi">
 					<div class="container">
 						<h2 class="reviews__title">What say happy clients</h2>
 						<div class="reviews-wrapper">
@@ -451,10 +474,6 @@
 									name="email"
 									id="email"
 								/>
-								<a
-									class="main-footer__top-form-button"
-									type="submit"
-								></a>
 							</form>
 							<div class="main-footer__top-info">
 								<h6 class="main-footer__top-info-title">Office</h6>
@@ -466,8 +485,18 @@
 							<div class="main-footer__top-info">
 								<h6 class="main-footer__top-info-title">Contact</h6>
 								<p class="main-footer__top-info-subtitle">
-									+92 302 300 3215 <br />
-									ouraddress@email.com
+									<a
+										class="main-footer__top-info-subtitle-tel"
+										href="tel:+923023003215"
+										>+92 302 300 3215</a
+									>
+									<br />
+									<a
+										class="main-footer__top-info-subtitle-email"
+										href="mailto:ouraddress@email.com"
+									>
+										ouraddress@email.com</a
+									>
 								</p>
 							</div>
 						</div>
@@ -479,28 +508,28 @@
 								Terms & Conditions Privacy
 							</p>
 							<div class="main-footer__bottom-links">
-								<a class="main-footer__bottom-links-link" href="">
+								<a class="main-footer__bottom-links-link" href="#">
 									<img
 										class="main-footer__bottom-links-link-icon"
 										src="/src/assets/icons/twitter-icon.svg"
 										alt="twitter-icon"
 									/>
 								</a>
-								<a class="main-footer__bottom-links-link" href="">
+								<a class="main-footer__bottom-links-link" href="#">
 									<img
 										class="main-footer__bottom-links-link-icon"
 										src="/src/assets/icons/facebook-icon.svg"
 										alt="facebook-icon"
 									/>
 								</a>
-								<a class="main-footer__bottom-links-link" href="">
+								<a class="main-footer__bottom-links-link" href="#">
 									<img
 										class="main-footer__bottom-links-link-icon"
 										src="/src/assets/icons/web-icon.svg"
 										alt="web-icon"
 									/>
 								</a>
-								<a class="main-footer__bottom-links-link" href="">
+								<a class="main-footer__bottom-links-link" href="#">
 									<img
 										class="main-footer__bottom-links-link-icon"
 										src="/src/assets/icons/github-icon.svg"

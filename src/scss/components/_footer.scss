@@ -51,19 +51,6 @@
 	&__top-form-email::placeholder {
 		color: black;
 	}
-
-	&__top-form-button {
-		position: relative;
-		border: none;
-		outline: none;
-		background: transparent;
-	}
-	&__top-form-button::after {
-		content: url(/src/assets/icons/arrow-right.svg);
-		position: absolute;
-		right: 0;
-	}
-
 	// .main-footer__top-info
 
 	&__top-info {
@@ -79,6 +66,24 @@
 	// .main-footer__top-info-subtitle
 
 	&__top-info-subtitle {
+		color: #fff;
+	}
+
+	&__top-info-subtitle-tel {
+		text-decoration: none;
+		color: #fff;
+		transition: 0.5s;
+	}
+	&__top-info-subtitle-tel:hover {
+		color: $yellow;
+	}
+	&__top-info-subtitle-email {
+		text-decoration: none;
+		color: #fff;
+		transition: 0.5s;
+	}
+	&__top-info-subtitle-email:hover {
+		color: $yellow;
 	}
 
 	// .main-footer__bottom
@@ -93,7 +98,7 @@
 	// .main-footer__bottom-rights
 
 	&__bottom-rights {
-		transition: 0.3s;
+		transition: 0.5s;
 		cursor: pointer;
 	}
 	&__bottom-rights:hover {
@@ -102,7 +107,7 @@
 	// .main-footer__bottom-privacy
 
 	&__bottom-privacy {
-		transition: 0.3s;
+		transition: 0.5s;
 		cursor: pointer;
 	}
 
@@ -112,7 +117,7 @@
 	// .main-footer__bottom-links
 
 	&__bottom-links {
-		transition: 0.3s;
+		transition: 0.5s;
 		display: flex;
 		gap: 1.625rem;
 		cursor: pointer;
