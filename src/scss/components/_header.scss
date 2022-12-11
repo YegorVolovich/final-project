@@ -14,6 +14,9 @@
 		display: flex;
 		justify-content: space-between;
 		min-width: 55%;
+		@media screen and (max-width: 805px) {
+			display: none;
+		  }
 	}
 
 	&__content-nav-link {

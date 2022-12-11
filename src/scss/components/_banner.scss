@@ -1,4 +1,5 @@
 html {
+	font-size: 16px;
 	scroll-behavior: smooth;
 }
 .banner {
@@ -16,7 +17,7 @@ html {
 		left: 60px;
 		top: -60px;
 		z-index: 1;
-		animation: world infinite 4s;
+		// animation: world infinite 3s;
 	}
 	&__title::after {
 		content: url(/src/assets/icons/line.svg);
@@ -41,14 +42,13 @@ html {
 		line-height: 40px;
 		color: #e0e5f3;
 		max-width: 48%;
-		margin-left: 190px;
+		margin-left: 11.875rem;
 	}
 
 	// .banner-content__button
 
 	&__button {
-		margin-left: 190px;
-		margin-top: 44px;
+		margin: 2.75rem 0 0 11.875rem;
 	}
 
 	&__scroll-down {
@@ -59,10 +59,12 @@ html {
 		text-decoration: none;
 		display: block;
 		transform: rotate(270deg);
+		text-align: center;
 		position: relative;
-		top: 40rem;
-		left: 0px;
-		transition: 0.5s;
+		top: 14rem;
+		transition: 0.3s;
+		margin-left: 11.875rem;
+		z-index: 10;
 		cursor: pointer;
 	}
 	&__scroll-down::before {
@@ -79,6 +81,13 @@ html {
 		position: absolute;
 		bottom: -258px;
 		left: -105px;
+		z-index: 3;
+	}
+
+	&__work-decor {
+		position: absolute;
+		top: 765px;
+		left: 36px;
 	}
 
 	// .banner-content__women
@@ -89,8 +98,12 @@ html {
 		top: 185px;
 		z-index: 10;
 	}
-	&__women::after {
-		content: url(/src/assets/images/women-circle.png);
+	&__women-circle {
+		position: absolute;
+		top: 590px;
+		right: -70px;
+		cursor: pointer;
+		z-index: 15;
 	}
 }
 
@@ -105,5 +118,269 @@ html {
 
 	100% {
 		transform: scale(1);
+	}
+}
+
+@media (max-width: 1080px) {
+	.banner-content {
+		margin-bottom: 25px;
+		&__women {
+			width: 42%;
+			position: absolute;
+			left: 745px;
+			top: 185px;
+			z-index: 10;
+		}
+		&__women-circle {
+			width: 13%;
+			position: absolute;
+			top: 565px;
+			right: -50px;
+			cursor: pointer;
+			z-index: 15;
+		}
+		&__work {
+			position: absolute;
+			bottom: -330px;
+			left: -5px;
+			z-index: 3;
+		}
+
+		&__work-decor {
+			position: absolute;
+			width: 13%;
+			top: 835px;
+			left: 150px;
+		}
+	}
+}
+@media (max-width: 1024px) {
+	.banner-content {
+		&__title {
+			font-size: 120px;
+		}
+		&__title2 {
+			font-size: 120px;
+			padding-right: 180px;
+		}
+		&__women {
+			width: 37%;
+			position: absolute;
+			left: 630px;
+			top: 270px;
+			z-index: 10;
+		}
+		&__women-circle {
+			width: 12%;
+			position: absolute;
+			top: 585px;
+			right: 20px;
+			cursor: pointer;
+			z-index: 15;
+		}
+		&__subtitle {
+			font-family: "Inter";
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 40px;
+			color: #e0e5f3;
+			max-width: 48%;
+			margin-left: 9.875rem;
+		}
+		&__work-decor {
+			position: absolute;
+			width: 13%;
+			top: 820px;
+			left: 150px;
+		}
+		&__button {
+			margin: 2.75rem 0 0 9.875rem;
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.banner-content {
+		&__women {
+			width: 35%;
+			position: absolute;
+			left: 620px;
+			top: 285px;
+			z-index: 10;
+		}
+		&__women-circle {
+			width: 12%;
+			position: absolute;
+			top: 575px;
+			right: 35px;
+			cursor: pointer;
+			z-index: 15;
+		}
+		&__title::before {
+			content: url(/src/assets/icons/world-class.svg);
+			position: absolute;
+			left: 65px;
+			top: -75px;
+			z-index: 1;
+			// animation: world infinite 3s;
+		}
+		&__subtitle {
+			font-family: "Inter";
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 40px;
+			color: #e0e5f3;
+			max-width: 48%;
+			margin-left: 9.875rem;
+		}
+		&__work {
+			left: 10px;
+		}
+
+		&__work-decor {
+			top: 810px;
+			left: 165px;
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.banner-content {
+		&__women {
+			width: 34%;
+			left: 610px;
+			top: 300px;
+		}
+		&__title {
+			position: relative;
+			z-index: 100;
+		}
+		&__title::before {
+			z-index: -1;
+		}
+	}
+}
+
+@media (max-width: 880px) {
+	.banner-content {
+		&__women {
+			width: 33%;
+			left: 560px;
+			top: 335px;
+		}
+		&__title {
+			position: relative;
+			z-index: 100;
+		}
+		&__title::before {
+			left: 15px;
+			z-index: -1;
+		}
+		&__subtitle {
+			font-size: 20px;
+		}
+		&__work-decor {
+			top: 850px;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.banner-content {
+		&__women {
+			width: 33%;
+			left: 485px;
+			top: 430px;
+		}
+		&__women-circle {
+			width: 11%;
+			position: absolute;
+			top: 650px;
+			right: 55px;
+		}
+		&__title {
+			font-size: 100px;
+			position: relative;
+			z-index: 100;
+		}
+		&__title::before {
+			left: 15px;
+			z-index: -1;
+		}
+		&__title2 {
+			font-size: 100px;
+		}
+		&__subtitle {
+			margin-left: 4.875rem;
+		}
+		&__work-decor {
+			top: 795px;
+		}
+		&__button {
+			margin-left: 4.875rem;
+		}
+		&__scroll-down {
+			display: none;
+		}
+	}
+}
+@media (max-width: 690px) {
+	.banner-content {
+		&__women {
+			left: 390px;
+			top: 545px;
+		}
+		&__women-circle {
+			width: 10%;
+			top: 735px;
+			right: 80px;
+		}
+		&__title {
+			font-size: 100px;
+			position: relative;
+			z-index: 100;
+		}
+		&__title::before {
+			left: 15px;
+			z-index: -1;
+		}
+		&__title2 {
+			font-size: 100px;
+		}
+		&__subtitle {
+			margin-left: 4.875rem;
+		}
+		&__work-decor {
+			top: 795px;
+		}
+		&__button {
+			margin-left: 4.875rem;
+		}
+		&__scroll-down {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.banner-content {
+		&__title {
+			font-size: 80px;
+			position: relative;
+			z-index: 100;
+		}
+		&__title::before {
+			left: -26px;
+		}
+		&__title2 {
+			font-size: 80px;
+		}
+		&__women {
+			left: 325px;
+			top: 555px;
+			width: 36%;
+		}
+		&__work {
+			width: 38%;
+		}
 	}
 }

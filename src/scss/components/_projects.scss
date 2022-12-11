@@ -4,13 +4,14 @@
 	&__button {
 		margin: 0 auto;
 		border: 1px solid $yellow;
+		margin-bottom: 5.625rem;
 	}
 }
 .projects-top {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 7.5rem 0 3rem;
+	margin: 0 0 3rem;
 
 	// .projects-top__title
 
