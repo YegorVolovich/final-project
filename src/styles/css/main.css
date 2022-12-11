@@ -1172,6 +1172,9 @@ html {
     position: absolute;
     left: -1rem;
   }
+  .solution__item-subtitle {
+    font-size: 16px;
+  }
   .solution__photo-circle {
     width: 111px;
     height: 107px;
@@ -1313,7 +1316,7 @@ html {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #F3F5F6;
+    background-color: #f3f5f6;
     position: absolute;
     left: 40px;
   }
@@ -1322,7 +1325,7 @@ html {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #F3F5F6;
+    background-color: #f3f5f6;
     position: absolute;
     right: 40px;
   }
@@ -1358,6 +1361,11 @@ html {
           justify-content: space-between;
   width: 45%;
 }
+@media (max-width: 950px) {
+  .projects-top__navigation {
+    width: 60%;
+  }
+}
 .projects-top__navigation-link {
   font-family: "Inter";
   font-size: 16px;
@@ -1368,6 +1376,9 @@ html {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
+}
+.projects-top__navigation-link--color {
+  color: #FFC93E;
 }
 .projects-top__navigation-link:hover {
   color: #FFC93E;
@@ -1386,6 +1397,97 @@ html {
 .work__card-title {
   margin: 2rem 0;
   max-width: 24.563rem;
+}
+@media (max-width: 550px) {
+  .projects-top__navigation {
+    width: 75%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .projects-top__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .projects-top__navigation {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .work__card-title {
+    display: none;
+  }
+  .work__card-subtitle {
+    display: none;
+  }
+  .work__card--disabled {
+    display: none;
+  }
+  .work {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .projects__button {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .projects-top__navigation {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work__card-title {
+    font-size: 20px;
+  }
+  .work__card-subtitle {
+    font-size: 16px;
+  }
+  .work {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .work__card-title {
+    display: none;
+  }
+  .work__card-subtitle {
+    display: none;
+  }
+  .work__card--disabled {
+    display: none;
+  }
+  .projects__button {
+    display: none;
+  }
+  .pagination {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFC93E;
+    position: relative;
+    margin: 0 auto;
+  }
+  .pagination::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f3f5f6;
+    position: absolute;
+    left: 40px;
+  }
+  .pagination::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f3f5f6;
+    position: absolute;
+    right: 40px;
+  }
 }
 .reviews__title {
   margin: 0 0 3rem 0;
