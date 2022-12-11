@@ -2,104 +2,186 @@
 }
 
 .services-top {
-    display: flex;
-    justify-content: space-between;
-    margin: 7.5rem 0 2.5rem;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 7.5rem 0 2.5rem;
+	align-items: center;
 
-		// .services-top__title
+	// .services-top__title
 
-		&__title {
-            max-width: 23.875rem;
-		}
+	&__title {
+		max-width: 23.875rem;
+	}
 
-		// .services-top__button
+	// .services-top__button
 
-		&__button {
-            margin-right: 25px;
-		}
+	&__button {
+		margin-right: 25px;
+	}
 }
 
 .services-items {
-    display: flex;
+	display: flex;
 	margin-bottom: 7.5rem;
 
-		// .services-items__left
+	// .services-items__left
 
-		&__left {
-		}
+	&__left {
+	}
 
-		// .services-items__button
+	// .services-items__button
 
-		&__button {
-           
-		}
+	&__button {
+	}
 
-		// .services-items__right
+	// .services-items__right
 
-		&__right {
-		}
+	&__right {
+	}
 }
 .left {
+	// .left__top-card
 
-		// .left__top-card
+	&__top-card {
+		max-width: 95%;
+		background-color: $bgBlue;
+		border-radius: 50px 0px 0px 0px;
+		margin: 0 1.875rem 1.875rem 0;
+		padding: 5.188rem 2.375rem;
+	}
 
-		&__top-card {
-            max-width: 95%;
-            background-color: $bgBlue;
-            border-radius: 50px 0px 0px 0px;
-            margin: 0 1.875rem 1.875rem 0;
-            padding: 5.188rem 2.375rem;
-           
-		}
+	// .left__bottom-card
 
-		// .left__bottom-card
-
-		&__bottom-card {
-            max-width: 95%;
-            background-color: $bgBlue;
-            border-radius: 0px 0px 0px 50px;
-            padding: 5.188rem 2.375rem;
-		}
+	&__bottom-card {
+		max-width: 95%;
+		background-color: $bgBlue;
+		border-radius: 0px 0px 0px 50px;
+		padding: 5.188rem 2.375rem;
+	}
 }
 .card {
+	// .card__icon
 
-		// .card__icon
+	&__icon {
+	}
 
-		&__icon {
-		}
+	// .card__title
 
-		// .card__title
+	&__title {
+		color: #fff;
+		margin: 1.5rem 0;
+	}
 
-		&__title {
-            color: #fff;
-            margin: 1.5rem 0;
-		}
+	// .card__subtitle
 
-		// .card__subtitle
-
-		&__subtitle {
-            margin-bottom: 2.5rem;
-		}
+	&__subtitle {
+		margin-bottom: 2.5rem;
+	}
 }
 .right {
+	// .right__top-card
 
-		// .right__top-card
+	&__top-card {
+		max-width: 95%;
+		background-color: $bgBlue;
+		border-radius: 0px 50px 0px 0px;
+		margin: 1.875rem 0;
+		padding: 5.188rem 2.375rem;
+	}
 
+	// .right__bottom-card
+
+	&__bottom-card {
+		max-width: 95%;
+		background-color: $bgBlue;
+		border-radius: 0px 0px 50px 0px;
+		padding: 5.188rem 2.375rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.services-top {
+		&__title {
+			font-size: 24px;
+			max-width: 190px;
+			line-height: 29px;
+		}
+	}
+	.services-items {
+		flex-direction: column;
+	}
+	.card {
+		&__icon {
+			width: 25%;
+		}
+		&__title {
+			font-size: 20px;
+		}
+		&__subtitle {
+			font-size: 16px;
+			max-width: 245px;
+		}
+	}
+	.left {
 		&__top-card {
-            max-width: 95%;
-            background-color: $bgBlue;
-            border-radius: 0px 50px 0px 0px;
-            margin: 1.875rem 0;
-            padding: 5.188rem 2.375rem;
+			max-width: 100%;
+			padding: 2rem 1.5rem;
+			border-radius: 30px;
+			margin: 0 0 2.5rem 0;
+
 		}
-
-		// .right__bottom-card
-
 		&__bottom-card {
-            max-width: 95%;
-            background-color: $bgBlue;
-            border-radius: 0px 0px 50px 0px;
-            padding: 5.188rem 2.375rem;
+			display: none;
 		}
+	}
+	.right {
+		&__top-card {
+			display: none;
+		}
+		&__bottom-card {
+			display: none;
+		}
+	}
+	.services-items {
+		margin-bottom: 5rem;
+	}
+	.services-top {
+		margin-top: 5rem;
+	}
+	.services-top__button {
+		border: none;
+		color: $yellow;
+		padding: 0;
+		margin: 0;
+		font-size: 16px;
+		&::after {
+			content: none;
+		}
+	}
+	.pagination{
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: $yellow;
+		position: relative;
+		margin: 0 auto;
+		&::after{
+			content: '';
+			width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: #F3F5F6;
+		position: absolute;
+		left: 40px;
+		}
+		&::before{
+			content: '';
+			width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: #F3F5F6;
+		position: absolute;
+		right: 40px;
+		}
+	}
 }
