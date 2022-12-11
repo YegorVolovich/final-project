@@ -893,7 +893,7 @@ html {
     right: 55px;
   }
   .banner-content__title {
-    font-size: 100px;
+    font-size: 110px;
     position: relative;
     z-index: 100;
   }
@@ -902,7 +902,7 @@ html {
     z-index: -1;
   }
   .banner-content__title2 {
-    font-size: 100px;
+    font-size: 110px;
   }
   .banner-content__subtitle {
     margin-left: 4.875rem;
@@ -991,7 +991,7 @@ html {
   margin-top: 40px;
   margin-bottom: 48px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
   .about-us-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1000,9 +1000,24 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 40px;
   }
+}
+@media screen and (max-width: 768px) {
   .about-us-content__collage {
-    width: 65%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about-us-content__text-title {
+    font-size: 24px;
+  }
+  .about-us-content__text-subtitle {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 390px) {
@@ -1844,13 +1859,13 @@ html {
   .main-footer__top-info-subtitle {
     text-align: center;
     font-size: 16px;
-    color: #E0E5F3;
+    color: #e0e5f3;
   }
   .main-footer__top-info-subtitle-tel {
-    color: #E0E5F3;
+    color: #e0e5f3;
   }
   .main-footer__top-info-subtitle-email {
-    color: #E0E5F3;
+    color: #e0e5f3;
   }
 }
 @media (max-width: 680px) {
