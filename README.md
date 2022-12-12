@@ -1,1 +1,1 @@
-# final-project "Dalio - Digital Agency"
+# Вёрстка лендинга "Dalio - Digital Agency" по макету в Figma
