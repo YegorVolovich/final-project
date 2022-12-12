@@ -17,7 +17,7 @@ html {
 		left: 60px;
 		top: -60px;
 		z-index: 1;
-		// animation: world infinite 3s;
+		animation: world infinite 3s;
 	}
 	&__title::after {
 		content: url(/src/assets/icons/line.svg);
@@ -221,7 +221,6 @@ html {
 			left: 65px;
 			top: -75px;
 			z-index: 1;
-			// animation: world infinite 3s;
 		}
 		&__subtitle {
 			font-family: "Inter";
@@ -273,6 +272,7 @@ html {
 		}
 		&__title::before {
 			left: 15px;
+			animation: none;
 			z-index: -1;
 		}
 		&__subtitle {
@@ -302,6 +302,7 @@ html {
 			position: relative;
 			z-index: 100;
 		}
+
 		&__title::before {
 			left: 15px;
 			z-index: -1;
@@ -361,6 +362,17 @@ html {
 	}
 }
 
+@media (max-width: 768px) {
+	.banner-content {
+		&__title::after {
+			right: -253px;
+		}
+		&__title::before {
+			left: -20px;
+		}
+	}
+}
+
 @media (max-width: 600px) {
 	.banner-content {
 		&__title {
@@ -380,7 +392,190 @@ html {
 			width: 36%;
 		}
 		&__work {
-			width: 38%;
+			// width: 38%;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.banner-content {
+		&__title {
+			font-size: 70px;
+			line-height: 35px;
+		}
+		&__title::before {
+			content: url(/src/assets/icons/word-class-small.svg);
+			position: absolute;
+			left: 15px;
+			top: -40px;
+		}
+		&__title::after {
+			content: url(/src/assets/icons/line-small.svg);
+			position: absolute;
+			right: 45px;
+			top: -30px;
+			z-index: 1;
+		}
+		&__title2 {
+			font-size: 70px;
+			line-height: 35px;
+			padding-right: 125px;
+		}
+		&__subtitle {
+			margin-left: 3rem;
+			font-size: 20px;
+			line-height: 32px;
+			max-width: 75%;
+		}
+		&__button {
+			margin-left: 3rem;
+			margin-top: 1.5rem;
+		}
+		&__women {
+			left: 260px;
+			top: 450px;
+			width: 42%;
+		}
+		&__women-circle {
+			width: 13%;
+			top: 625px;
+			right: 40px;
+		}
+		&__work {
+			width: 40%;
+		}
+		&__work-decor {
+			top: 630px;
+			left: 155px;
+		}
+	}
+}
+
+@media (max-width: 414px) {
+	.banner-content {
+		margin-left: 25px;
+		margin-bottom: 22rem;
+		&__title {
+			margin-top: 20px;
+		}
+		&__title::before {
+			left: -35px;
+			top: -35px;
+		}
+		&__title::after {
+			right: 10px;
+		}
+		&__subtitle {
+			margin-left: 0rem;
+			font-size: 18px;
+		}
+		&__button {
+			margin-left: 0rem;
+		}
+		&__women {
+			left: 35px;
+			top: 450px;
+			width: 74%;
+		}
+		&__women-circle {
+			width: 19%;
+			top: 685px;
+			right: 100px;
+		}
+		&__work {
+			width: 55%;
+			top: 775px;
+			left: 65px;
+		}
+		&__work-decor {
+			top: 995px;
+			left: 225px;
+		}
+	}
+	.about-us-content__text-title {
+		line-height: 29px;
+	}
+}
+
+@media (max-width: 390px) {
+	.banner-content {
+		margin-bottom: 25rem;
+		&__title::before {
+			left: -45px;
+		}
+		&__title::after {
+			right: -5px;
+		}
+		&__women-circle {
+			width: 22%;
+			top: 720px;
+			left: 180px;
+		}
+		&__women {
+			width: 90%;
+			left: 5px;
+		}
+		&__work {
+			width: 60%;
+			top: 815px;
+			left: 50px;
+		}
+		&__work-decor {
+			top: 1035px;
+			left: 215px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.banner-content {
+		&__women-circle {
+			top: 710px;
+		}
+		&__work-decor {
+			top: 1025px;
+			left: 210px;
+		}
+		&__button {
+			font-size: 16px;
+		}
+		&__title::after {
+			right: -18px;
+			top: -12px;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.banner-content {
+		margin-left: 15px;
+		margin-bottom: 18rem;
+		&__title::after {
+			right: -30px;
+			top: -35px;
+		}
+		&__subtitle {
+			font-size: 16px;
+			max-width: 85%;
+		}
+		&__women {
+			top: 400px;
+		}
+		&__women-circle {
+			width: 23%;
+			top: 620px;
+			left: 160px;
+		}
+		&__work {
+			top: 715px;
+			left: 40px;
+		}
+		&__work-decor {
+			top: 900px;
+			left: 175px;
+		}
+		&__button {
+			font-size: 16px;
 		}
 	}
 }

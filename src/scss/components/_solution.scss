@@ -109,6 +109,10 @@
 			left: -1rem;
 		}
 	}
+	.solution__photo-circle {
+		top: -2rem;
+		left: 34rem;
+	}
 }
 
 @media (max-width: 500px) {
@@ -143,5 +147,11 @@
 		display: flex;
 		padding: 3rem 0 0;
 		overflow: hidden;
+	}
+}
+@media (max-width: 320px) {
+	.solution {
+		background: linear-gradient(to top, $yellow 25%, #0b142f 25%);
+		position: relative;
 	}
 }
