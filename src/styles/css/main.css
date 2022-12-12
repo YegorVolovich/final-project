@@ -1351,7 +1351,7 @@ html {
     padding-left: 2rem;
   }
   .solution__item-title::before {
-    content: url(/src/assets/icons/check-yellow.svg);
+    content: url(../../assets/icons/check-yellow.svg);
     position: absolute;
     left: -1rem;
   }
