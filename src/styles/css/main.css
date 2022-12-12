@@ -472,7 +472,7 @@ p {
   overflow: hidden;
 }
 .wrapper__background {
-  background-image: url(/src/assets/images/background.svg);
+  background-image: url(../../assets/images/background.svg);
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -623,7 +623,7 @@ html {
   position: relative;
 }
 .banner-content__title::before {
-  content: url(/src/assets/icons/world-class.svg);
+  content: url(../../assets/icons/world-class.svg);
   position: absolute;
   left: 60px;
   top: -60px;
@@ -632,7 +632,7 @@ html {
           animation: world infinite 3s;
 }
 .banner-content__title::after {
-  content: url(/src/assets/icons/line.svg);
+  content: url(../../assets/icons/line.svg);
   position: absolute;
   right: -145px;
   top: -35px;
@@ -824,7 +824,7 @@ html {
     z-index: 15;
   }
   .banner-content__title::before {
-    content: url(/src/assets/icons/world-class.svg);
+    content: url(../../assets/icons/world-class.svg);
     position: absolute;
     left: 65px;
     top: -75px;
@@ -988,13 +988,13 @@ html {
     line-height: 35px;
   }
   .banner-content__title::before {
-    content: url(/src/assets/icons/word-class-small.svg);
+    content: url(..//../assets/icons/word-class-small.svg);
     position: absolute;
     left: 15px;
     top: -40px;
   }
   .banner-content__title::after {
-    content: url(/src/assets/icons/line-small.svg);
+    content: url(../../assets/icons/line-small.svg);
     position: absolute;
     right: 45px;
     top: -30px;
